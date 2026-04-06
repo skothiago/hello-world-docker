@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Olá, DevOps! Meu primeiro contêiner está rodando."
+    return "Terceiro teste de atualização!"
 
 if __name__ == '__main__':
-    # O host 0.0.0.0 é fundamental para o Docker conseguir expor a porta
-    app.run(host='0.0.0.0', port=5000)
+    # Adicionamos o debug=True aqui!
+    app.run(host='0.0.0.0', port=5000, debug=True)
